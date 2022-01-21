@@ -1,0 +1,182 @@
+{
+	"variables": [],
+	"info": {
+		"name": "assignment1",
+		"_postman_id": "5eaca2aa-0e58-21da-2e66-33dcbcea1590",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9079/register",
+			"request": {
+				"url": "http://localhost:9079/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\" :\"yaya\", \"password\":\"mypassword\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9079/login",
+			"request": {
+				"url": "http://localhost:9079/login",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic eWF5YTpteXBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9079/user",
+			"request": {
+				"url": "http://localhost:9079/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNTg2ODk2fQ.FiLuAmXruRwtQYy--z1bpnDRsVdxyHrzhnvrQLgWfvs",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic eWF5YTpteXBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9079/timetable",
+			"request": {
+				"url": "http://localhost:9079/timetable",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNTkxMTExfQ.akX4ZjUmbsXbabk9ekq_8nlLX7sAnlblLpOSbX5sIWM",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic eWF5YTpteXBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9079/liveshow",
+			"request": {
+				"url": "http://localhost:9079/liveshow",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNzU3OTc1fQ.XdyvGMDFE-gR2KPNyFOztdUZaTetlzH9J0IHh72ctYg",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic eWF5YTpteXBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"style\": \"摇滚\", \"title\": \"新的摇滚演出\",\"link\":\"thisislink\", \"src\":\"this is src\",\"artist\":\"allen\",\"time\":\"2/1/2022\",\"price\":\"230元\",\"address\":\"livehouseaaa\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9079/liveshow/5",
+			"request": {
+				"url": "http://localhost:9079/liveshow/5",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNzU5MDY5fQ.aokSIQaYY65XbzHoQ_kQR1KbGCN_YQuRd3CI8CrIdhI",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic eWF5YTpteXBhc3N3b3Jk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
